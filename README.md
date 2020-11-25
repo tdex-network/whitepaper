@@ -1,3 +1,3 @@
 # TDEX White paper
 
-White paper detailing the principles and features of TDEX
+[White paper](https://github.com/TDex-network/whitepaper/blob/main/TDEXWP_V1.md) detailing the principles and features of TDEX
