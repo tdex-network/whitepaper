@@ -94,16 +94,16 @@ Para realizar transacciones en la red, los daemons (usuarios) requieren canales 
 
 El protocolo TSWAP es una implementación segura basada en intercambio atómico que permite a los pares en la red intercambiar mensajes y transacciones firmados. Como medio para tender un puente entre el **proponente** y el **respondedor**, TSWAP es un elemento fundamental del ecosistema TDEX. Al aprovechar los protocolos de mensajes y transporte antes mencionados, TSWAP tiene principalmente cuatro subelementos:
 
-- **SwapRequest:**  **t**** he proposer** initiates the swap.
-- **SwapAccept:** the responder accepts the request.
-- **SwapComplete:** the proposer confirms the secure connection.
-- **SwapFail:** either party announces the swap's termination upon failure. In the future, an additional element—_failure_code—_could be implemented to denote the reason behind the failure.
+- **SwapRequest::** El **proponente** inicia el intercambio.
+- **SwapAccept:** el respondedor acepta la solicitud.
+- **SwapComplete:** el proponente confirma la conexión segura.
+- **SwapFail:** cualquiera de las partes anuncia la finalización del intercambio al producirse un fallo. En el futuro, se podría implementar un elemento adicional (_failure_code) para indicar la razón del fallo.
 
 #### 3.1.4 Protocolo comercial: BOTD #4
 
 Posiblemente la implementación más crucial para TDEX, el protocolo comercial combina todos los BOTD anteriores para definir la interfaz pública para la plataforma sin custodia. Al contrario del modelo de libro de órdenes de las plataformas de custodia, este protocolo permite a *traders* y *creadores de mercado* conectarse directamente mediante intercambios atómicos.
 
-At a later section, we shall discuss the ecosystem for traders and liquidity providers. Presently, it should suffice to mention that market makers represent *always-on* daemons and provide proportional liquidity to **Base-Quote** asset pairs. In the future, TDEX would adopt [Simplicity](https://blockstream.com/simplicity.pdf)-based contracts to further enhance the platform's security and privacy, while also enabling wider functionalities.
+En una sección posterior, analizaremos el ecosistema para traders y proveedores de liquidez. Actualmente, debería ser suficiente mencionar que los creadores de mercado representan daemons *siempre activos* y ofrecen liquidez proporcional a los pares de **Activo base y Activo cotizado**. En el futuro, TDEX adoptaría contratos basados en  [Simplicity](https://blockstream.com/simplicity.pdf) para mejorar aún más la seguridad y privacidad de la plataforma, al tiempo que permitiría funcionalidades más amplias.
 
 ### 3.2 TDEX para creadores de mercado
 
@@ -149,11 +149,11 @@ Básicamente, estos SDK representan las contribuciones de TDEX a las capacidades
 
 Una vez comentados los diversos elementos del ecosistema TDEX, veamos ahora algunos destacados y posibles casos de uso.
 
-#### 3.4.1 Secondary Market for Liquid Assets
+#### 3.4.1 Mercado secundario de Liquid Assets
 
-In general, it must be borne in mind that assets traded on the TDEX network are essentially Liquid Assets. Thus, being a secondary market for L-Assets is among the primary use cases of the TDEX platform, at least in the initial stages.
+En general, hay que tener en cuenta que los activos negociados en la red TDEX son esencialmente Liquid Assets. Por lo tanto, ser un mercado secundario de Liquid Assets se encuentra entre los principales casos de uso de la plataforma TDEX, al menos en las etapas iniciales.
 
-Briefly, Liquid allows its users to "issue" transferable assets, ranging across asset classes—tokenised fiat and other non-BTC cryptocurrencies, non-fungible tokens (collectibles), incentivisation tokens (rewards), tokenised commodities (for instance, gold coins), and so on. Every L-Asset has a 64-character identifier, which can be attached with human-readable domains on the blockchain by publishing their metadata on the "Asset Registry" at Blockstream.info—that is, on Liquid's version of a Block Explorer. The protocol also allows for reissuance tokens and token burns. In TDEX's context, this means that Providers can create markets for any pair of L-Assets, thus facilitating trades in these assets. Similarly, it could be leveraged for NFT transactions and sales.
+En resumen, Liquid permite a sus usuarios «emitir» activos transferibles, que abarcan diferentes clases de activos: monedas fiduciarias tokenizadas y otras criptomonedas que no son BTC, tokens no fungibles (coleccionables), tokens de incentivo (recompensas), materias primas tokenizadas (por ejemplo, monedas de oro), etc. Cada Liquid Asset tiene un identificador de 64 caracteres, que se puede adjuntar con dominios legibles por humanos en la cadena de bloques publicando sus metadatos en el «Registro de activos» en Blockstream.info, es decir, en la versión de Liquid de un Explorador de bloques. El protocolo también permite la reemisión de tokens y la quema de tokens. En el contexto de TDEX, esto significa que los proveedores pueden crear mercados para cualquier par de L-Assets, lo que facilita las operaciones con estos activos. Del mismo modo, podría aprovecharse en transacciones y ventas con tokens no fungibles (NFT, por sus siglas en inglés).
 
 En este punto, sin embargo, es imperativo tener en cuenta un aspecto crucial de la visión de TDEX, y es que TDEX no tendrá un token nativo, principalmente porque el proyecto está orientado a la comunidad y no prioriza ningún ánimo de lucro.
 
