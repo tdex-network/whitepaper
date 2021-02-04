@@ -103,7 +103,7 @@ Il protocollo TSWAP è un'implementazione sicura basata su atomic swap che conse
 
 Si tratta dell'implementazione più importante per TDEX. Il protocollo di trading combina tutti i precedenti BOTD per definire l'interfaccia pubblica che implementa il servizio di scambi senza custodia. A differenza del modello order-book tipico degli scambi custodial, questo protocollo consente ai *trader* e ai *market maker* di collegarsi direttamente utilizzando degli atomic swap.
 
-In una sezione successiva, parleremo dell'ecosistema per trader e liquidity provider. Al momento, basta dire che i market maker rappresentano daemon *sempre attivi* e forniscono liquidità proporzionale ai valori della coppia di asseti **Base-Valutazione**. In futuro, TDEX adotterà contratti basati su [Simplicity](https://blockstream.com/simplicity.pdf) per migliorare ulteriormente la sicurezza e la privacy della piattaforma e consentire funzionalità più ampie.
+In una sezione successiva, parleremo dell'ecosistema per trader e liquidity provider. Al momento, basta dire che i market maker rappresentano daemon *sempre attivi* e forniscono liquidità proporzionale ai valori della coppia di asset **Base-Valutazione**. In futuro, TDEX adotterà contratti basati su [Simplicity](https://blockstream.com/simplicity.pdf) per migliorare ulteriormente la sicurezza e la privacy della piattaforma e consentire funzionalità più ampie.
 
 ### 3.2 TDEX per Market Maker
 
@@ -119,7 +119,7 @@ Per partecipare come Provider, occorre implementare un Daemon sulla rete eseguen
 
 Uno degli elementi qualificanti di TDEX è che esso fornisce molteplici opzioni di market making per i fornitori, ampliando così in modo significativo il loro ambito di applicazione. In altre parole, TDEX consente ai market maker di scegliere o creare le proprie strategie, senza imporne una.
 
-Per impostazione predefinita, il protocollo adotta una strategia CFMM (*Constant Function Market-Making*) per determinare i prezzi degli asset. Tuttavia, i market maker hanno anche la possibilità di implementare feed (esterni) *collegabili* utilizzando un'API personalizzata. Considerando che il coinvolgimento delle aziende come fondamentale per il successo di TDEX, le strategie di market making personalizzate sono tra le funzionalità più importanti della piattaforma, soprattutto perché sostengono allo stesso tempo la logica di scelta degli utenti. In altre parole, mentre i fornitori possono scegliere la loro strategia di prezzo, i trader, che alla fine sono i veri fruitori della piattaforma, hanno la possibilità di accettare o rifiutare queste strategie.
+Per impostazione predefinita, il protocollo adotta una strategia CFMM (*Constant Function Market-Making*) per determinare i prezzi degli asset. Tuttavia, i market maker hanno anche la possibilità di implementare feed (esterni) *collegabili* utilizzando un'API personalizzata. Considerando che il coinvolgimento delle aziende sarà fondamentale per il successo di TDEX, le strategie di market making personalizzate sono tra le funzionalità più importanti della piattaforma, soprattutto perché sostengono allo stesso tempo la logica di scelta degli utenti. In altre parole, mentre i fornitori possono scegliere la loro strategia di prezzo, i trader, che alla fine sono i veri fruitori della piattaforma, hanno la possibilità di accettare o rifiutare queste strategie.
 
 #### 3.2.3 Commissioni di transazione
 
@@ -129,13 +129,13 @@ Allo stesso tempo, tuttavia, TDEX adotta il [meccanismo](https://en.bitcoin.it/w
 
 #### 3.2.4 Liquidity Pools (Implementazione futura)
 
-Andando avanti nella roadmap prevista, TDEX intende implementare la funzionalità di un servizio *senza custodia* che può fungere da struttura di riferimento per il collegamento dei daemon e la condivisione delle loro risorse. Una volta realizzata, questa funzione garantirà una liquidità maggiore e più coerente sulla piattaforma, oltre a presentare un unico endpoint per maggiore comodità dei trader. In questo modo, TDEX sarà in grado di accomodare richieste di liquidita e scalare.
+Andando avanti nella roadmap prevista, TDEX intende implementare la funzionalità di un servizio *senza custodia* che può fungere da struttura di riferimento per il collegamento dei daemon e la condivisione delle loro risorse. Una volta realizzata, questa funzione garantirà una liquidità maggiore e più coerente sulla piattaforma, oltre a presentare un unico endpoint per maggiore comodità dei trader. In questo modo, TDEX sarà in grado di accomodare richieste di liquidità e scalare.
 
 In quanto tale, il fornitore che crea un pool sarà il *Pool Master* e altri fornitori potranno unirsi alla *rete di servizi distribuiti* per consolidare liquidità. Come incentivo, il pool master avrà la capacità di determinare il prezzo base per gli asset del pool e i trader avranno accesso ai prezzi spot aggregati del provider. Per un dato asset, ogni fornitore può operare da solo o entrare a far parte di un pool, ma non può assumere entrambi i ruoli contemporaneamente.
 
 ### 3.3 TDEX per trader
 
-Nel contesto TDEX, il *mercato* è una qualsiasi coppia costituita da asset base e di valutazione che possono essere scambiati con un atomic swap. Come descritto nella sezione BOTD #3, un **Proposer** deve avviare gli swap su TDEX e, in alternativa, agire da Trader sulla rete. In altre parole, un trader su TDEX è qualsiasi utente che implementa completamente il protocollo di trading (BOTD #4). In tal modo, è possibile connettersi all'Interfaccia del Trader descritta in precedenza ( la porta pubblica del daemon del fornitore) e fare trading al prezzo di mercato stabilito.
+Nel contesto TDEX, il *mercato* è una qualsiasi coppia costituita da asset base e di valutazione che possono essere scambiati con un atomic swap. Come descritto nella sezione BOTD #3, un **Proposer** deve avviare gli swap su TDEX e, in alternativa, agire da Trader sulla rete. In altre parole, un trader su TDEX è qualsiasi utente che implementa completamente il protocollo di trading (BOTD #4). In tal modo, è possibile connettersi all'Interfaccia del Trader descritta in precedenza (la porta pubblica del daemon del fornitore) e fare trading al prezzo di mercato stabilito.
 
 In generale, il trading su TDEX è simile a qualsiasi altra operazione basata su atomic swap, il che significa che il trader può scambiare quantità uguali (in base al valore di mercato) di entrambi gli asset della coppia. Tuttavia, a differenza della maggior parte dei competitor sui altre reti, il quadro di riferimento di TDEX garantisce riservatezza, settlement più rapidi e slippage ridotti o nulli. Inoltre, essendo un servizio senza custodia, TDEX evita ai trader il rischio di perdere fondi a causa di hacking e violazioni della sicurezza.
 
@@ -159,7 +159,7 @@ A questo punto, tuttavia, è indispensabile sottolineare un aspetto cruciale del
 
 #### 3.4.2 Trading istituzionale e trasferimento di fondi
 
-I trader e i market maker sulla rete TDEX non devono necessariamente essere singoli privati, ma possono anche essere istituiti e imprese. Pertanto, la piattaforma fornisce un canale sicuro alle organizzazioni di questi tipo che intendono operare su L-Asset. Cio' favorirà l'adozione a lungo termine di tale soluzione e il consolidamento della comunità di utenti.
+I trader e i market maker sulla rete TDEX non devono necessariamente essere singoli privati, ma possono anche essere istituiti e imprese. Pertanto, la piattaforma fornisce un canale sicuro alle organizzazioni di questi tipo che intendono operare su L-Asset. Ciò favorirà l'adozione a lungo termine di tale soluzione e il consolidamento della comunità di utenti.
 
 Oltre a questo, il toolkit open source di TDEX amplia ulteriormente la flessibilità della soluzione, dando la possibilità ad aziende piccole, medie e grandi di implementare soluzioni personalizzate per soddisfare le proprie esigenze finanziarie in modo decentralizzato. Infatti, è in questo senso che TDEX punta a diventare una "backbone network" per LiFi
 
@@ -167,7 +167,7 @@ Oltre a questo, il toolkit open source di TDEX amplia ulteriormente la flessibil
 
 I problemi di privacy e sicurezza si moltiplicano. I numerosi obblighi di conformità rischiano di ostacolare gli scambi centralizzati in vari modi, mentre quelli decentralizzati ricorrono a compromessi sulla sicurezza e sono spesso vittima di dilaganti attacchi, truffe e violazioni di ogni tipo. In definitiva, come effetto combinato di questi fattori, gli utenti stanno perdendo i loro soldi o i loro dati e, soprattutto, si vedono privati dei loro diritti fondamentali alla privacy e all'autonomia.
 
-TDEX è una sistema decentralizzato basato sulla privacy e implementato su Liquid Network, sviluppato proprio per offrire una soluzione alternativa in questo contesto. Si tratta essenzialmente di un protocollo di trading basato su atomic swap, ma la piattaforma dispone anche di un toolkit open source che gli sviluppatori possono utilizzare per distribuire API personalizzate e altre soluzioni di rete. Nel complesso, TDEX punta a diventare un protocollo di riferimento che facilita soluzioni decentralizzate su Liquid Network e, di conseguenza,  rafforzare le fondamenta della Liquid Finance (LiFi) come spazio sicuro, protetto e fondato sul merito per una comunità globale di utenti e appassionati di criptovalute.
+TDEX è una sistema decentralizzato basato sulla privacy e implementato su Liquid Network, sviluppato proprio per offrire una soluzione alternativa in questo contesto. Si tratta essenzialmente di un protocollo di trading basato su atomic swap, ma la piattaforma dispone anche di un toolkit open source che gli sviluppatori possono utilizzare per distribuire API personalizzate e altre soluzioni di rete. Nel complesso, TDEX punta a diventare un protocollo di riferimento che facilita soluzioni decentralizzate su Liquid Network e, di conseguenza, rafforzare le fondamenta della Liquid Finance (LiFi) come spazio sicuro, protetto e fondato sul merito per una comunità globale di utenti e appassionati di criptovalute.
 
 ## Riconoscimenti
 
