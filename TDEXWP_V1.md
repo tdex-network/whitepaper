@@ -121,7 +121,7 @@ One of TDEX&#39;s differentiating elements is that it provides multiple market-m
 
 By default, the protocol adopts a _Constant Function Market-Making_ (CFMM) strategy for determining asset prices. However, market makers also have the option to implement _pluggable_ (external) price feeds using a custom API. Considering that business involvement would be pivotal to TDEX&#39;s success, custom market-making strategies are among the platform&#39;s most crucial functionalities, especially because it simultaneously upholds the logic of users&#39; choice. In other words, while Providers have the choice to select their pricing strategy, the platform&#39;s sovereign traders have the capacity to choose or reject these strategies.
 
-#### 3.2.3 Swapp Fee
+#### 3.2.3 Swap Fee
 
 While the _base\_asset-quote\_asset_ reserve ratio shifts with every trade, TDEX ensures consistency in the overall market size by levying a minimal swap fee on every trade and adding it to the reserves. Considering that arbitrage shall motivate a consistent transactional flow, in cases where the market maker implements an AMM-based strategy, the revenue generated from the fee should rise over time.
 
