@@ -56,8 +56,6 @@ Para simplificar, o Liquid funciona com um mecanismo peg-in e peg-out, protegido
 
 Ao contrário da _distribuição de Poisson aleatória_ do consenso de PoW do Bitcoin, o peg bidirecional federado da Liquid implica em várias melhorias na latência transacional. Por sua vez, isso permitiria a negociação e liquidação de transações quase em tempo real (~2 minutos) na rede TDEX, preservando a descentralização da plataforma, uma vez que a federação é um conjunto de participantes mutuamente não confiáveis. Além disso, o Liquid adota um vetor de limiar, onde _n_ é o número total de funcionários e _k_ representa o número mínimo de assinaturas necessárias para que um bloco seja considerado válido. Apesar da lacuna de que cada funcionário deve ter um relógio sincronizado adequadamente, o referido vetor permite que a rede alcance _segurança_ e _vivência_, o que acaba se traduzindo em maior segurança e tempo de atividade para TDEX.
 
-### 2.2 Confidential Transactions
-
 ### 2.2 Transações confidenciais
 
 No processo de desenvolvimento do TDEX, a compreensão de que a privacidade é um direito humano fundamental se apresentou como o substrato para a maioria das escolhas. O livro-razão público do Bitcoin registra todas as transações sem vinculá-las diretamente ao remetente e, aparentemente, isso é suficiente para a privacidade. No entanto, um olhar mais atento revela que _pseudonimato_, em uma extensão considerável, fica aquém de garantir _autonomia_ para o usuário. Por exemplo, a _análise da cadeia_ e o rastreamento do histórico de transações relacionado a uma determinada chave pública podem negar efetivamente o pseudonimato do usuário. Além disso, os padrões revelados no processo também podem ser usados para classificar moedas _boas e _ ruins_, o que é uma ameaça à _fungibilidade_. Atualmente, estão sendo desenvolvidas soluções para resolver esses problemas, que incluem a implementação do TDEX.
@@ -82,17 +80,17 @@ Nas seções anteriores, discutimos a estrutura do TDEX e as razões por trás d
 
 ### 3.1 Os pilares técnicos: Noções básicas de True DEX (BOTD)
 
-No núcleo do TDEX, existem quatro protocolos _Mensagem_, _Transporte, Troca_ e _Trade_, que discutiremos neste segmento. No entanto, a este respeito, o artigo abstém-se deliberadamente de elaborar as exposições técnicas completas que estão disponíveis nas documentações técnicas em [Especificações TDEX] (https://specs.tdex.network/).
+No núcleo do TDEX, existem quatro protocolos _Mensagem_, _Transporte, Troca_ e _Trade_, que discutiremos neste segmento. No entanto, a este respeito, o artigo abstém-se deliberadamente de elaborar as exposições técnicas completas que estão disponíveis nas documentações técnicas em [Especificações TDEX](https://specs.tdex.network/).
 
-#### 3.1.1 Protocolo de Mensagem: BOTD # 1
+#### 3.1.1 Protocolo de Mensagem: BOTD #1
 
 Um requisito fundamental, o chamado primitivo, para a rede descentralizada da TDEX é um canal de mensagens bidirecional seguro para conectar contrapartes. Essa conexão deve ser confiável, estável, ponto a ponto (P2P) e, acima de tudo, com prioridade para a privacidade. Leveraging Liquid, TDEX pode atender a esses requisitos para _comunicação confidencial_. Além disso, para serializar essas mensagens, o TDEX implementa o _Protocol Buffers_ do Google - um método independente de plataforma e linguagem para serializar dados estruturados.
 
-#### 3.1.2 Protocolo de Transporte: BOTD # 2
+#### 3.1.2 Protocolo de Transporte: BOTD #2
 
 Para realizar transações na rede, os daemons (usuários) requerem canais de transporte P2P, em que a necessidade de confidencialidade e segurança se aplica de forma semelhante ao protocolo de mensagem. A este respeito, o TDEX fornece várias opções com um grau variável de privacidade que o usuário pode implementar isoladamente ou em combinação — _Texto claro_ (inseguro), _Serviço Onion_ (onion), _TLS do lado do servidor_ (TLS), _TLS Mútuo_ (mTLS ) e _Noise \ _XK \ _secp256k1 \ _ChaChaPoly \ _SHA256_ (noise). Ao participar da rede TDEX, os usuários devem declarar seu canal de transporte implementado.
 
-#### 3.1.3 Protocolo de troca: BOTD # 3
+#### 3.1.3 Protocolo de troca: BOTD #3
 
 O protocolo TSWAP é uma implementação segura baseada em troca atômica que permite que os pares na rede troquem mensagens e transações assinadas. Como meio de fazer a ponte entre o **Proponente** e o **Respondente**, o TSWAP é um elemento central do ecossistema TDEX. Aproveitando a mensagem mencionada e os protocolos de transporte, o TSWAP tem principalmente quatro subelementos:
 
@@ -101,19 +99,19 @@ O protocolo TSWAP é uma implementação segura baseada em troca atômica que pe
 - **SwapComplete:** o proponente confirma a conexão segura.
 - **SwapFail:** qualquer uma das partes anuncia o encerramento da troca em caso de falha. No futuro, um elemento adicional - _failure \ _code - _pode ser implementado para denotar o motivo da falha.
 
-#### 3.1.4 Protocolo Comercial: BOTD 
+#### 3.1.4 Protocolo Comercial: BOTD #4
 
 Indiscutivelmente a implementação mais crucial para o TDEX, o Protocolo Comercial combina todos os BOTDs anteriores para definir a interface pública para a troca não custodial. Ao contrário do modelo de livro de pedidos de trocas de custódia, este protocolo permite que _traders_ e _makers de mercado_ se conectem diretamente usando trocas atômicas.
 
-Em uma seção posterior, discutiremos o ecossistema para comerciantes e provedores de liquidez. Atualmente, deve ser suficiente mencionar que os formadores de mercado representam _sempre-on_ daemons e fornecem liquidez proporcional aos pares de ativos ** Base-Quote **. No futuro, a TDEX adotaria contratos baseados em [Simplicidade] (https://blockstream.com/simplicity.pdf) para aprimorar ainda mais a segurança e privacidade da plataforma, ao mesmo tempo em que possibilita funcionalidades mais amplas.
+Em uma seção posterior, discutiremos o ecossistema para comerciantes e provedores de liquidez. Atualmente, deve ser suficiente mencionar que os formadores de mercado representam _sempre-on_ daemons e fornecem liquidez proporcional aos pares de ativos ** Base-Quote **. No futuro, a TDEX adotaria contratos baseados em [Simplicidade](https://blockstream.com/simplicity.pdf) para aprimorar ainda mais a segurança e privacidade da plataforma, ao mesmo tempo em que possibilita funcionalidades mais amplas.
 
-### 3.2 TDEX para Formadores de Mercado
+### 3.2 TDEX para Formadores de Mercado #2
 
 Na rede TDEX, _Market Makers_ são as entidades que fornecem liquidez aos pares de ativos a serem negociados na bolsa e, portanto, também podem ser chamados de _Liquidity Providers_ (** Provider **). A principal função do Provedor é manter um par vinculado mutuamente de um Ativo de cotação (cotação \ _asset) e um Ativo de base (base \ _asset). Deve-se notar, no entanto, que isso se aplica a qualquer par de ativos e não necessariamente aos indexados a Bitcoin.
 
-Como uma solução para o problema clássico de [_Dupla Coincidência de Desejo_] (https://www.oxfordreference.com/view/10.1093/oi/authority.20110803095622703), o TDEX permite que os market makers executem pontos finais _sempre-on_, ao mesmo tempo que revelam seu endereço acessível publicamente usando um dos canais definidos no BOTD # 2. Isso garante mercados prontamente disponíveis para os comerciantes, abordando assim um dos principais pontos de dor, das bolsas descentralizadas.
+Como uma solução para o problema clássico de [_Dupla Coincidência de Desejo_](https://www.oxfordreference.com/view/10.1093/oi/authority.20110803095622703), o TDEX permite que os market makers executem pontos finais _sempre-on_, ao mesmo tempo que revelam seu endereço acessível publicamente usando um dos canais definidos no BOTD # 2. Isso garante mercados prontamente disponíveis para os comerciantes, abordando assim um dos principais pontos de dor, das bolsas descentralizadas.
 
-#### 3.2.1 Implementação do Daemon
+#### 3.2.1 Implementação do Daemon #3
 
 Para participar como Provedor, é necessário implementar um Daemon na rede executando-o através do Docker ou como uma entidade autônoma (Leia mais: [Procedimento de implementação do Daemon](https://docs.tdex.network/tdex-daemon.html). Um daemon padrão no TDEX expõe dois endpoints HTTP / 2 gRPC - a ** Trader Interface ** (pública) e a ** Operator Interface ** (privada). Enquanto a interface pública representa a porta para comerciantes (padrão: 9945), a interface privada (padrão: 9000) é usada para as transações internas do market maker. Além disso, para segurança ideal, cada daemon tem um [Blockstream Green](https://help.blockstream.com/hc/en-us/categories/900000056183-Blockstream-Green) pré-incorporado.
 
