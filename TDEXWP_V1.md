@@ -80,7 +80,7 @@ In the previous sections, we have discussed TDEX&#39;s framework and the reasons
 
 ### 3.1 The Technical Pillars: Basics of True DEX (BOTD)
 
-At TDEX&#39;s core, there are four protocols—_Message_, _Transport, Swap_, and _Trade_—which we shall discuss in this segment. However, in this regard, the paper deliberately refrains from elaborating the complete technical expositions which are available in the technical documentations under [TDEX Specifications](https://specs.tdex.network/).
+At TDEX&#39;s core, there are four protocols—_Message_, _Transport, Swap_, and _Trade_—which we shall discuss in this segment. However, in this regard, the paper deliberately refrains from elaborating the complete technical expositions which are available in the technical documentations under [TDEX Specifications](https://dev.tdex.network/docs/specs/index).
 
 #### 3.1.1 Message Protocol: BOTD #1
 
