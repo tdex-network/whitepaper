@@ -1,8 +1,8 @@
-# TDEX: A Decentralised Vision to Leverage Atomic Swaps for Liquid Finance (LiFi)
+# TDEX: A Decentralised Vision to Leverage Atomic Swaps for Trustless Finance
 
-**TDEX white paper | Version 1.0 | October 2020**
+**TDEX white paper | Version 1.1. | June 2022**
 
-**Abstract:** T(True)DEX is the first-of-its-kind, atomic-swap based, privacy-prioritised Decentralised Exchange (DEX) platform built on the Liquid Network. As a community-oriented, open-source solution, it aims to become the framework for a fast and secure cyberspace for crypto-users, as well as a secondary market for Liquid Assets. In doing so, TDEX facilitates liquidity generation in a way that leverages Bitcoin&#39;s security but substantially mitigates its privacy and fungibility shortcomings, thus strengthening the foundation for Liquid Finance (LiFi)—the Liquid Network&#39;s version of Decentralised Finance (DeFi). In this white paper, we elaborate on the project&#39;s ecosystem and the underlying vision that shines as a guiding light.
+**Abstract:** T(True)DEX is the first-of-its-kind, atomic-swap based, privacy-prioritised Decentralised Exchange (DEX) project built on the Liquid Network. As a community-oriented, open-source project , it aims to become the framework for a fast and secure cyberspace for Bitcoin users, as well as a secondary market for Liquid Assets. In doing so, TDEX facilitates liquidity generation in a way that leverages Bitcoin&#39;s security but substantially mitigates its privacy and fungibility shortcomings, thus strengthening the foundation for Tustless Finance. In this white paper, we elaborate on the project&#39;s ecosystem and the underlying vision that shines as a guiding light.
 
 ## 1. Introduction
 
@@ -18,7 +18,7 @@ Primarily, this is a direct outcome of the involvement of multiple intermediarie
 
 In 2008, Satoshi Nakamoto released the Bitcoin [white paper](https://nakamotoinstitute.org/bitcoin/), presenting a combination of four potent, _user-oriented_ technologies—blockchain, cryptography, proof-of-work, and peer-to-peer—in the sense that they reinstate control with users, rather than with centralised governing entities. The innovation facilitated a new economic paradigm for secure, peer-to-peer monetary transactions within a distributed and fully-decentralised ecosystem. By tackling the problem of double-spending without using the trust-based model, Satoshi effectively eliminated third-party intermediaries from the process and replaced them with a computerised algorithm.
 
-Nevertheless, despite having all the features of sound money and store of value, Bitcoin, in its skeletal form, falls short of its promise of privacy and fungibility. In other words, Bitcoin transactions are pseudonymous and not anonymous, while its fungibility is challenged by chain analysis and so on. Furthermore, to achieve optimal security and resilience, Bitcoin&#39;s core makes essential compromises in scalability, rendering it inefficient for several crypto-based solutions and functionalities. Later in the paper, we discuss how the Liquid sidechain addresses these issues with Bitcoin&#39;s Layer-1.
+Nevertheless, despite having all the features of sound money and store of value, Bitcoin, in its skeletal form, falls short of its promise of privacy and fungibility. In other words, Bitcoin transactions are pseudonymous and not anonymous, while its fungibility is challenged by chain analysis and so on. Furthermore, to achieve optimal security and resilience, Bitcoin&#39;s core makes essential compromises in scalability, rendering it inefficient for several Bitcoin based solutions and functionalities. Later in the paper, we discuss how the Liquid sidechain addresses these issues with Bitcoin&#39;s Layer-1.
 
 ### 1.2 The Problem of Generating Consistent Value
 
@@ -34,11 +34,11 @@ Partially because of their underlying blockchains and also as a downside of impl
 
 ### 1.3 The TDEX Project
 
-Developed by SevenLabs, TDEX is a community-oriented, Elements-based decentralised exchange built on the Liquid Network. Leveraging the combined security, usability, and speed of the Bitcoin-Liquid framework, TDEX envisions a fast, secure, and truly-decentralised trading experience in Liquid Assets (L-Assets).
+Initiated by SevenLabs, TDEX is a community-oriented, Elements-based decentralised exchange built on the Liquid Network. Leveraging the combined security, usability, and speed of the Bitcoin-Liquid framework, TDEX envisions a fast, secure, and truly-decentralised trading experience in Liquid Assets (L-Assets).
 
 The underlying TSWAP protocol implements atomic swaps and solves the liquidity problem through several &quot;zero-to-one&quot; incentives. TDEX also empowers liquidity providers by enabling them to choose their market-making strategy. On the other hand, traders gain from competitive rates, faster settlements, lower slippage, and better security.
 
-In the following sections, we discuss the background and foreground elements of the TDEX platform. In the process, we highlight how the platform could emerge as a backbone network for Liquid Finance (LiFi), enabling professional traders and business owners to manage, transact, and invest within a privacy-prioritised environment.
+In the following sections, we discuss the background and foreground elements of the TDEX project. In the process, we highlight how the protocol could emerge as a backbone network for Trustless Finance, enabling professional traders and business owners to manage, transact, and invest within a privacy-prioritised environment.
 
 ## 2. The Framework: Security, Privacy, and Speed
 
@@ -54,7 +54,7 @@ Apart from the network&#39;s Byzantine Fault Tolerant (BFT) consensus that we sh
 
 To put it simply, Liquid works with a peg-in-peg-out mechanism, secured by a _globally and culturally distributed_ set of &quot;functionaries&quot;, collectively forming a &quot;[Strong Federation](https://blockstream.com/strong-federations.pdf)&quot; of validators. To ensure that these functionaries have their _skin in the game_, the protocol requires them to be exchanges, brokers, and so on—that is, entities with substantial motivation for ensuring the stability and progress of the Bitcoin network. The federation signs blocks, transactions, and _pegs_ on Liquid using &quot;key modules&quot; which enforce algorithmic logic to restrict unauthorised forks and transactions. Furthermore, the underlying BFT consensus implements a _round-robin, three-phase commit scheme_ and blocks are signed every minute, without involving the risk of chain reorganisation.
 
-As opposed to the _random Poisson distribution_ of Bitcoin&#39;s PoW consensus, Liquid&#39;s federated two-way peg implies manifold improvements in transactional latency. In turn, this would allow almost real-time trade and transaction settlement (~2 minutes) on the TDEX network, while preserving the platform&#39;s decentralisation since the federation is a set of mutually non-trusting participants. Furthermore, Liquid adopts a threshold vector, , where _n_ is the total number of functionaries and _k_ represents the minimum number of signatures required for a block to be considered valid. Notwithstanding the shortcoming that every functionary must have an adequately-synced clock, said vector enables the network to achieve both _safety_ and _liveness_, which ultimately translate to greater security and uptime for TDEX.
+As opposed to the _random Poisson distribution_ of Bitcoin&#39;s PoW consensus, Liquid&#39;s federated two-way peg implies manifold improvements in transactional latency. In turn, this would allow almost real-time trade and transaction settlement (~2 minutes) on the TDEX network, while preserving the protocol&#39;s decentralisation since the federation is a set of mutually non-trusting participants. Furthermore, Liquid adopts a threshold vector, , where _n_ is the total number of functionaries and _k_ represents the minimum number of signatures required for a block to be considered valid. Notwithstanding the shortcoming that every functionary must have an adequately-synced clock, said vector enables the network to achieve both _safety_ and _liveness_, which ultimately translate to greater security and uptime for TDEX.
 
 ### 2.2 Confidential Transactions
 
@@ -66,17 +66,17 @@ Implementing components such as _homomorphic commitments_, _Diffie-Hellman key e
 
 As a primary cogwheel in Liquid&#39;s machine, confidential transactions adopt asymmetric encryptions using _blinding keys_—that is, a private-public key pair. Among other outcomes, it minimises the risks of interception during the key exchange process, thus making transactions optimally private and censorship-resistant. In simple terms, the process may be summarised as follows:
 
-- The asset owner (sender), say Marie, broadcasts the public address for her intended transaction (swap). Understandably, this is visible to the entire network.
-- An interested receiver, say Alice, _encodes her public blinding key_ into an address which she shares with Marie. In the case of TSWAP, this exchange occurs over an encrypted messaging protocol which, apart from ensuring security, also enables both parties to verify the UTXOs involved in the transaction.
-- Upon receiving the message, Marie builds the transaction and encrypts it with Alice&#39;s public address. Alice (the receiver) is the only person with the associated private key for this transaction, and thus, she alone can decrypt the transaction after it is recorded on the blockchain—not even Marie.
+- The asset owner (sender), say Alice, broadcasts the public address for her intended transaction (swap). Understandably, this is visible to the entire network.
+- An interested receiver, say Bob, _encodes her public blinding key_ into an address which he shares with Alice. In the case of TSWAP, this exchange occurs over an encrypted messaging protocol which, apart from ensuring security, also enables both parties to verify the UTXOs involved in the transaction.
+- Upon receiving the message, Alice builds the transaction and encrypts it with Bob&#39;s public address. Bob (the receiver) is the only person with the associated private key for this transaction, and thus, he alone can decrypt the transaction after it is recorded on the blockchain—not even Alice.
 
-Consequently, the network addresses such transactional needs where a blanket &quot;transparency&quot; is rather undesirable. For instance, confidential transactions enable businesses to conduct financial processes in a way that is decentralised and verifiable, but simultaneously protects sensitive information from public exposure. Similarly, the principle strengthens the impetus for crypto adoption in other relevant sectors, such as governmental finance, and so on.
+Consequently, the network addresses such transactional needs where a blanket &quot;transparency&quot; is rather undesirable. For instance, confidential transactions enable businesses to conduct financial processes in a way that is decentralised and verifiable, but simultaneously protects sensitive information from public exposure. Similarly, the principle strengthens the impetus for Bitcoin adoption in other relevant sectors, such as governmental finance, and so on.
 
 ## 3. The TDEX Ecosystem
 
 The emergence of decentralised solutions on the Liquid Network—or, as Adam Back, the CEO of Blockstream, calls it, Liquid Finance or LiFi—has been gaining substantial strength recently. Consequently, an increasing amount of value is being generated on the network, especially in the form of Liquid Assets. In turn, TDEX strives to address the community&#39;s growing demand for a decentralised secondary market for these assets, apart from being an open-source toolkit to foster further innovation.
 
-In the previous sections, we have discussed TDEX&#39;s framework and the reasons behind some of its crucial choices. Now, we elaborate on the platform&#39;s ecosystem, presenting the reader with an overview of the protocols and implementations.
+In the previous sections, we have discussed TDEX&#39;s framework and the reasons behind some of its crucial choices. Now, we elaborate on the protocol&#39;s ecosystem, presenting the reader with an overview of the protocols and implementations.
 
 ### 3.1 The Technical Pillars: Basics of True DEX (BOTD)
 
@@ -103,11 +103,11 @@ The TSWAP protocol is a secure, atomic-swap-based implementation enabling peers 
 
 Arguably the most crucial implementation for TDEX, the Trade Protocol combines all of the previous BOTDs to define the public interface for the non-custodial exchange. Contrary to the order-book model of custodial exchanges, this protocol allows _traders_ and _market makers_ to connect directly using atomic-swaps.
 
-At a later section, we shall discuss the ecosystem for traders and liquidity providers. Presently, it should suffice to mention that market makers represent _always-on_ daemons and provide proportional liquidity to **Base-Quote** asset pairs. In the future, TDEX would adopt [Simplicity](https://blockstream.com/simplicity.pdf)-based contracts to further enhance the platform&#39;s security and privacy, while also enabling wider functionalities.
+At a later section, we shall discuss the ecosystem for users and liquidity providers. Presently, it should suffice to mention that market makers represent _always-on_ daemons and provide proportional liquidity to **Base-Quote** asset pairs. In the future, TDEX would adopt [Simplicity](https://blockstream.com/simplicity.pdf)-based contracts to further enhance the platform&#39;s security and privacy, while also enabling wider functionalities.
 
 ### 3.2 TDEX for Market Makers
 
-On the TDEX network, _Market Makers_ are such entities that provide liquidity to asset pairs to be traded on the exchange, and thus, may also be called _Liquidity Providers_ ( **Provider** ). The Provider&#39;s primary function is to hold a mutually-pegged pair of a Quote Asset (quote\_asset) and a Base Asset (base\_asset). It must be noted, however, that this applies to any asset pair and not necessarily the Bitcoin-pegged ones.
+On the TDEX network, _Market Makers_ are entities that provide liquidity to asset pairs to be traded on the exchange, and thus, may also be called _Liquidity Providers_ ( **Provider** ). The Provider&#39;s primary function is to hold a mutually-pegged pair of a Quote Asset (quote\_asset) and a Base Asset (base\_asset). It must be noted, however, that this applies to any asset pair and not necessarily the Bitcoin-pegged ones.
 
 As a solution for the classic problem of [_Double Coincidence of Wants_](https://www.oxfordreference.com/view/10.1093/oi/authority.20110803095622703), TDEX enables market markers to run _always-on_ endpoints, while also revealing its publicly reachable address using either of the channels defined in BOTD #2. This ensures readily available markets for the traders, thus addressing one of the major pain-points of decentralised exchanges.
 
@@ -125,11 +125,11 @@ By default, the protocol adopts a _Constant Function Market-Making_ (CFMM) strat
 
 While the _base\_asset-quote\_asset_ reserve ratio shifts with every trade, TDEX ensures consistency in the overall market size by levying a minimal swap fee on every trade and adding it to the reserves. Considering that arbitrage shall motivate a consistent transactional flow, in cases where the market maker implements an AMM-based strategy, the revenue generated from the fee should rise over time.
 
-Parallelly, however, TDEX adopts the [P2EP](https://en.bitcoin.it/wiki/PayJoin)[mechanism](https://en.bitcoin.it/wiki/PayJoin), thus minimising the blockchain space required by transactions which effectively optimises the fee involved. This is done to ensure a fair and level playground for both Traders and Providers on the platform.
+Parallelly, however, TDEX adopts the [P2EP](https://en.bitcoin.it/wiki/PayJoin)[mechanism](https://en.bitcoin.it/wiki/PayJoin), thus minimising the blockchain space required by transactions which effectively optimises the fee involved. This is done to ensure a fair and level playground for both Traders and Providers on the protocol.
 
 #### 3.2.4 Liquidity Pools (Future Implementation)
 
-Further along its intended roadmap, TDEX would implement a _non-custodial_ functionality which that can act as the framework for daemons to connect together and pool their assets. Once achieved, this would ensure greater and more consistent liquidity on the platform, as well as expose a single endpoint for traders&#39; convenience. In turn, TDEX will be able to accommodate financial demands at scale.
+Further along its intended roadmap, TDEX would implement a _non-custodial_ functionality which that can act as the framework for daemons to connect together and pool their assets. Once achieved, this would ensure greater and more consistent liquidity on the protocol, as well as expose a single endpoint for users&#39; convenience. In turn, TDEX will be able to accommodate financial demands at scale.
 
 As such, the Provider creating a pool will be the _Pool Master_ and other providers will be able to join the _distributed service mesh_ to aggregate liquidity. As an incentive, the pool master will be vested with the capacity to determine the base price for the pool&#39;s assets and traders will have to look up the provider&#39;s aggregated spot prices. For any given asset, a provider can either run alone or join a pool, but they cannot assume both positions simultaneously.
 
@@ -137,11 +137,11 @@ As such, the Provider creating a pool will be the _Pool Master_ and other provid
 
 In the context of TDEX, the _market_ is any pair of base and quote assets that can be swapped atomically. As mentioned under BOTD #3, a **Proposer** has to initiate swaps on TDEX, and alternatively, represents a Trader on the network. In other words, a Trader on TDEX is any user that fully implements the Trade Protocol (BOTD #4). In doing so, she connects with the previously-discussed Trader Interface—the public port of the Provider&#39;s daemon—and agrees to trade at the stipulated market rate.
 
-In general, trading on TDEX is similar to any other atomic-swap-based exchange, meaning that the trader can swap equal proportions (by market value) of both assets in the pair. However, unlike a majority of its peers from other networks, TDEX&#39;s framework ensures confidentiality, faster settlements, and minimal or no slippage. Moreover, being non-custodial, TDEX relieves the trader of concerns about losing funds to hacks and breaches.
+In general, trading on TDEX is similar to any other atomic-swap-based exchange, meaning that the trader can swap equal proportions (by market value) of both assets in the pair. However, unlike a majority of its peers from other networks, TDEX&#39;s framework ensures confidentiality, faster settlements, and minimal or no slippage. Moreover, being non-custodial, TDEX relieves the user of concerns about losing funds to hacks and breaches.
 
 #### 3.3.1 Software Development Kits: TDEX&#39;s Open-Source Contribution for LiFi
 
-Apart from the default UI, the platform also enables traders to deploy their custom client using TDEX&#39;s software development kits (SDK). In the initial phase, this can be done using [JavaScript](https://docs.tdex.network/tdex-sdk.html), but in the future, TDEX will have SDKs for Python, Go, and Rust. On the other hand, in the initial phase, traders interact with Providers using the [Command Line Interface](https://docs.tdex.network/tdex-cli.html#install) (CLI), until the future plan for a decentralised, mobile application comes to fruition.
+Apart from the default UI, the protocl also enables users to deploy their custom client using TDEX&#39;s software development kits (SDK). In the initial phase, this can be done using [JavaScript](https://docs.tdex.network/tdex-sdk.html), but in the future, TDEX will have SDKs for Python, Go, and Rust. On the other hand, in the initial phase, traders interact with Providers using the [Command Line Interface](https://docs.tdex.network/tdex-cli.html#install) (CLI), until the future plan for a decentralised, mobile application comes to fruition.
 
 Essentially, these SDKs represent TDEX&#39;s contributions to the network&#39;s open-source capabilities, primarily by empowering developers versed in bitcoin API implementation and other similar functionalities. In this regard, the broader vision is to drive innovations within the Liquid ecosystem, especially with the aim of strengthening liquidity generation on the network.
 
@@ -151,7 +151,7 @@ Having discussed the various elements of the TDEX ecosystem, let us now look at 
 
 #### 3.4.1 Secondary Market for Liquid Assets
 
-In general, it must be borne in mind that assets traded on the TDEX network are essentially Liquid Assets. Thus, being a secondary market for L-Assets is among the primary use cases of the TDEX platform, at least in the initial stages.
+In general, it must be borne in mind that assets exchanged on the TDEX network are essentially Liquid Assets. Thus, being a secondary market for L-Assets is among the primary use cases of the TDEX platform, at least in the initial stages.
 
 Briefly, Liquid allows its users to &quot;issue&quot; transferable assets, ranging across asset classes—tokenised fiat and other non-BTC cryptocurrencies, non-fungible tokens (collectibles), incentivisation tokens (rewards), tokenised commodities (for instance, gold coins), and so on. Every L-Asset has a 64-character identifier, which can be attached with human-readable domains on the blockchain by publishing their metadata on the &quot;Asset Registry&quot; at Blockstream.info—that is, on Liquid&#39;s version of a Block Explorer. The protocol also allows for reissuance tokens and token burns. In TDEX&#39;s context, this means that Providers can create markets for any pair of L-Assets, thus facilitating trades in these assets. Similarly, it could be leveraged for NFT transactions and sales.
 
@@ -159,15 +159,15 @@ At this point, however, it&#39;s imperative to note a crucial aspect of TDEX&#39
 
 #### 3.4.2 Institutional Trading &amp; Fund Transfer
 
-Traders and Market Makers on the TDEX network need not necessarily be individuals, but can also be institutions and businesses. Thus, the platform provides a secure channel for such an organisation to trade in L-Assets, which in turn, should play a determining role in enhancing long-term adoptions and in extending the community.
+Users and Market Makers on the TDEX network need not necessarily be individuals, but can also be institutions and businesses. Thus, the platform provides a secure channel for such an organisation to trade in L-Assets, which in turn, should play a determining role in enhancing long-term adoptions and in extending the community.
 
-Alongside this, TDEX&#39;s open-source toolkit further widens the scope by establishing the possibility for business—small, medium, and large—to deploy custom solutions to meet their financial needs in a decentralised manner. In fact, it is in this sense that TDEX&#39;s aim to become a &quot;backbone network&quot; for LiFi can be realised
+Alongside this, TDEX&#39;s open-source toolkit further widens the scope by establishing the possibility for business—small, medium, and large—to deploy custom solutions to meet their financial needs in a decentralised manner. In fact, it is in this sense that TDEX&#39;s aim to become a &quot;backbone network&quot; for Trustless Finance can be realised
 
 ## 4. Conclusion
 
 Privacy and security concerns are mushrooming. Compliance obligations are crippling centralised exchanges in several ways, while the decentralised ones are compromising on security and falling prey to rampant hacks, scams, and breaches of several kinds. Ultimately, as a combined effect of these factors, users are either losing their money or their data, and more importantly, are being deprived of their basic rights to privacy and autonomy.
 
-Developed against this backdrop, TDEX is a privacy-prioritised, decentralised solution deployed on the Liquid Network. Primarily an atomic-swap-based trading protocol, the platform also has an open-source toolkit that developers can use to deploy custom APIs and other solutions on the network. As a whole, TDEX envisions becoming a backbone protocol facilitating decentralised solutions on the Liquid Network, and in turn, strengthening the foundation of Liquid Finance (LiFi) as a secure, safe, and meritocratic space for a global community of crypto users and enthusiasts.
+Developed against this backdrop, TDEX is a privacy-prioritised, decentralised protocol deployed on the Liquid Network. Primarily an atomic-swap-based trading protocol, the platform also has an open-source toolkit that developers can use to deploy custom APIs and other solutions on the network. As a whole, TDEX envisions becoming a backbone protocol facilitating decentralised solutions on the Liquid Network, and in turn, strengthening the foundation of Trustless Finance as a secure, safe, and meritocratic space for a global community of Bitcoin users and enthusiasts.
 
 ## Acknowledgments
 
@@ -180,3 +180,5 @@ Embarking on a journey towards building the future, TDEX has been inspired, advi
 [Mohammad Musharraf](http://mohammadmusharraf.com/)
 
 [Shiladitya Sinha](https://www.linkedin.com/in/shiladityasinhaofficial/)
+
+Above all, thank you Satoshi Nakamoto
