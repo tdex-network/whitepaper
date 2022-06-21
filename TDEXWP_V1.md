@@ -2,7 +2,7 @@
 
 **TDEX white paper | Version 1.1. | June 2022**
 
-**Abstract:** T(True)DEX is the first-of-its-kind, atomic-swap based, privacy-prioritised Decentralised Exchange (DEX) project built on the Liquid Network. As a community-oriented, open-source project , it aims to become the framework for a fast and secure cyberspace for Bitcoin users, as well as a secondary market for Liquid Assets. In doing so, TDEX facilitates liquidity generation in a way that leverages Bitcoin&#39;s security but substantially mitigates its privacy and fungibility shortcomings, thus strengthening the foundation for Tustless Finance. In this white paper, we elaborate on the project&#39;s ecosystem and the underlying vision that shines as a guiding light.
+**Abstract:** T(True)DEX is the first-of-its-kind, atomic-swap based, privacy-prioritised Decentralised Exchange (DEX) project built on the Liquid Network. As a community-oriented, open-source project , it aims to become the framework for a fast and secure cyberspace for Bitcoin users, as well as a secondary market for Liquid Assets. In doing so, TDEX facilitates liquidity generation in a way that leverages Bitcoin&#39;s security but substantially mitigates its privacy and fungibility shortcomings, thus strengthening the foundation for Trustless Finance. In this white paper, we elaborate on the project&#39;s ecosystem and the underlying vision that shines as a guiding light.
 
 ## 1. Introduction
 
@@ -141,7 +141,7 @@ In general, trading on TDEX is similar to any other atomic-swap-based exchange, 
 
 #### 3.3.1 Software Development Kits: TDEX&#39;s Open-Source Contribution for LiFi
 
-Apart from the default UI, the protocl also enables users to deploy their custom client using TDEX&#39;s software development kits (SDK). In the initial phase, this can be done using [JavaScript](https://docs.tdex.network/tdex-sdk.html), but in the future, TDEX will have SDKs for Python, Go, and Rust. On the other hand, in the initial phase, traders interact with Providers using the [Command Line Interface](https://docs.tdex.network/tdex-cli.html#install) (CLI), until the future plan for a decentralised, mobile application comes to fruition.
+Apart from the default UI, the protocol also enables users to deploy their custom client using TDEX&#39;s software development kits (SDK). In the initial phase, this can be done using [JavaScript](https://docs.tdex.network/tdex-sdk.html), but in the future, TDEX will have SDKs for Python, Go, and Rust. On the other hand, in the initial phase, traders interact with Providers using the [Command Line Interface](https://docs.tdex.network/tdex-cli.html#install) (CLI), until the future plan for a decentralised, mobile application comes to fruition.
 
 Essentially, these SDKs represent TDEX&#39;s contributions to the network&#39;s open-source capabilities, primarily by empowering developers versed in bitcoin API implementation and other similar functionalities. In this regard, the broader vision is to drive innovations within the Liquid ecosystem, especially with the aim of strengthening liquidity generation on the network.
 
