@@ -1,8 +1,8 @@
-# TDEX: Una visión descentralizada para aprovechar los intercambios atómicos en Liquid Finance (LiFi)
+# TDEX: Una visión descentralizada para aprovechar los intercambios atómicos para Trustless Finance
 
-**Libro blanco de TDEX | Versión 1.0 | Octubre de 2020**
+**Libro blanco de TDEX | Versión 1.1 | Junio de 2022**
 
-**Resumen:** T(True)DEX es la primera plataforma de cambio descentralizada (DEX) basada en intercambios atómicos y que prioriza la privacidad de su clase creada en Liquid Network. Como solución de código abierto orientada a la comunidad, su objetivo es convertirse en el sistema de un ciberespacio rápido y seguro para los usuarios de criptomonedas, así como un mercado secundario para los activos líquidos. Al hacerlo, TDEX facilita la generación de liquidez de forma que aprovecha la seguridad del Bitcoin, pero mitiga sustancialmente sus deficiencias de privacidad y fungibilidad, lo que refuerza el fundamento de Liquid Finance (LiFi), la versión de Liquid Network de las finanzas descentralizadas (DeFi, por sus siglas en inglés). En este libro blanco, explicamos el ecosistema del proyecto y la visión subyacente que brilla como un faro.
+**Resumen:** T(True)DEX es la primera plataforma de cambio descentralizada (DEX) basada en intercambios atómicos y que prioriza la privacidad de su clase creada en Liquid Network. Como solución de código abierto orientada a la comunidad, su objetivo es convertirse en el sistema de un ciberespacio rápido y seguro para los usuarios de Bitcoin, así como un mercado secundario para los activos líquidos. Al hacerlo, TDEX facilita la generación de liquidez de forma que aprovecha la seguridad del Bitcoin, pero mitiga sustancialmente sus deficiencias de privacidad y fungibilidad, lo que refuerza el fundamento de Trustless Finance. En este libro blanco, explicamos el ecosistema del proyecto y la visión subyacente que brilla como un faro.
 
 ## 1. Introducción
 
@@ -34,11 +34,11 @@ En parte debido a sus cadenas de bloques subyacentes y también como desventaja 
 
 ### 1.3 El proyecto TDEX
 
-Desarrollado por SevenLabs, TDEX es una plataforma de cambio descentralizada basada en elementos y orientada a la comunidad creada en Liquid Network. Aprovechando la seguridad, usabilidad y velocidad combinadas del sistema Bitcoin-Liquid, TDEX prevé una experiencia rápida, segura y verdaderamente descentralizada en activos líquidos (L-Assets).
+Iniciada por SevenLabs, TDEX es una plataforma de cambio descentralizada basada en elementos y orientada a la comunidad creada en Liquid Network. Aprovechando la seguridad, usabilidad y velocidad combinadas del sistema Bitcoin-Liquid, TDEX prevé una experiencia rápida, segura y verdaderamente descentralizada en activos líquidos (L-Assets).
 
 El protocolo TSWAP subyacente implementa intercambios atómicos y resuelve el problema de liquidez a través de varios incentivos «cero a uno». TDEX también empodera a los proveedores de liquidez al permitirles elegir su estrategia de creación de mercado. Por otro lado, los traders se benefician de tarifas competitivas, liquidaciones más rápidas, menor retraso y mejor seguridad.
 
-En las secciones siguientes, hablamos de los elementos de primer y segundo plano de la plataforma TDEX. De paso, destacamos cómo la plataforma podría surgir como una red troncal para Liquid Finance (LiFi), al permitir a traders profesionales y propietarios de empresas gestionar, realizar transacciones e invertir dentro de un entorno donde se prioriza la privacidad.
+En las secciones siguientes, hablamos de los elementos de primer y segundo plano del proyecto TDEX. De paso, destacamos cómo el protocolo podría surgir como una red troncal para Trustless Finance (LiFi), al permitir a traders profesionales y propietarios de empresas gestionar, realizar transacciones e invertir dentro de un entorno donde se prioriza la privacidad.
 
 ## 2. El sistema: seguridad, privacidad y velocidad
 
@@ -54,7 +54,7 @@ Aparte del consenso de Tolerancia a faltas bizantinas (BFT, por sus siglas en in
 
 En pocas palabras, Liquid funciona con un mecanismo de vinculación y desvinculación, protegido por un conjunto de «funcionarios» *distribuidos global y culturalmente*, que forman colectivamente una «[Strong Federation](https://blockstream.com/strong-federations.pdf)» (federación fuerte) de validadores. Para asegurar que estos funcionarios *participen en el juego*, el protocolo requiere que sean plataformas de cambio, intermediarios, etc., es decir, entidades con una motivación sustancial para garantizar la estabilidad y el progreso de la red Bitcoin. La federación firma bloques, transacciones y *vínculos* en Liquid utilizando «módulos clave» que fuerzan a la lógica algorítmica a restringir bifurcaciones y transacciones no autorizadas. Además, el consenso BFT subyacente implementa un *sistema de compromiso de tres fases y por turnos* y los bloques se firman cada minuto, sin implicar el riesgo de reorganización de la cadena.
 
-A diferencia de la *distribución aleatoria de Poisson* del consenso de prueba de trabajo (PoW, por sus siglas en inglés) del Bitcoin, la vinculación bidireccional federada de Liquid implica múltiples mejoras en la latencia transaccional. A su vez, esto permitiría la liquidación de transacciones casi en tiempo real (~ 2 minutos) en la red TDEX, al tiempo que se preserva la descentralización de la plataforma, ya que la federación es un conjunto de participantes sin confianza mutua. Además, Liquid adopta un vector de umbral, donde *n* es el número total de funcionarios y *k* representa el número mínimo de firmas necesarias para que un bloque se considere válido. A pesar del inconveniente de que todo funcionario debe tener un reloj adecuadamente sincronizado, dicho vector permite que la red alcance *seguridad* y *viveza* , lo que en última instancia se traducirá en una mayor seguridad y actividad para TDEX.
+A diferencia de la *distribución aleatoria de Poisson* del consenso de prueba de trabajo (PoW, por sus siglas en inglés) del Bitcoin, la vinculación bidireccional federada de Liquid implica múltiples mejoras en la latencia transaccional. A su vez, esto permitiría la liquidación de transacciones casi en tiempo real (~ 2 minutos) en la red TDEX, al tiempo que se preserva la descentralización del protocolo, ya que la federación es un conjunto de participantes sin confianza mutua. Además, Liquid adopta un vector de umbral, donde *n* es el número total de funcionarios y *k* representa el número mínimo de firmas necesarias para que un bloque se considere válido. A pesar del inconveniente de que todo funcionario debe tener un reloj adecuadamente sincronizado, dicho vector permite que la red alcance *seguridad* y *viveza* , lo que en última instancia se traducirá en una mayor seguridad y actividad para TDEX.
 
 ### 2.2 Transacciones confidenciales
 
@@ -66,21 +66,21 @@ Al implementar componentes como *compromisos homomórficos*, *intercambio de cla
 
 Como engranaje principal en la máquina de Liquid, las transacciones confidenciales adoptan cifrados asimétricos que utilizan *claves cegadoras*, es decir, un par de claves pública y privada. Entre otros resultados, minimiza los riesgos de interceptación durante el proceso de intercambio de claves, lo que hace que las transacciones sean privadas de forma óptima y resistentes a la censura. En términos simples, el proceso se puede resumir de la siguiente manera:
 
-- El propietario del activo (remitente), por ejemplo, Marie, transmite la dirección pública de la transacción prevista (intercambio). Lógicamente, esto sería visible en toda la red.
-- Un receptor interesado, digamos Alice, *codifica su clave pública cegadora* en una dirección que comparte con Marie. En el caso de TSWAP, este intercambio se produce mediante un protocolo de mensajería cifrada que, además de garantizar la seguridad, también permite a ambas partes verificar los UTXO involucrados en la transacción.
-- Al recibir el mensaje, Marie crea la transacción y la cifra con la dirección pública de Alice. Alice (la receptora) es la única persona con la clave privada asociada para esta transacción y, por lo tanto, solo ella puede descifrar la transacción después de que se registre en la cadena de bloques, ni siquiera Marie.
+- El propietario del activo (remitente), por ejemplo, Alice, transmite la dirección pública de la transacción prevista (intercambio). Lógicamente, esto sería visible en toda la red.
+- Un receptor interesado, digamos Bob, *codifica su clave pública cegadora* en una dirección que comparte con Alice. En el caso de TSWAP, este intercambio se produce mediante un protocolo de mensajería cifrada que, además de garantizar la seguridad, también permite a ambas partes verificar los UTXO involucrados en la transacción.
+- Al recibir el mensaje, Alice crea la transacción y la cifra con la dirección pública de Bob. Bob (el receptor) es la única persona con la clave privada asociada para esta transacción y, por lo tanto, solo él puede descifrar la transacción después de que se registre en la cadena de bloques, ni siquiera Alice.
 
-En consecuencia, la red aborda tales necesidades transaccionales en las que una «transparencia» general resulta bastante indeseable. Por ejemplo, las transacciones confidenciales permiten a las empresas llevar a cabo procesos financieros de manera descentralizada y verificable, pero al mismo tiempo protege la información sensible de su exposición pública. De manera similar, este principio refuerza el ímpetu para la adopción de criptomonedas en otros sectores relevantes, como las finanzas gubernamentales, etc.
+En consecuencia, la red aborda tales necesidades transaccionales en las que una «transparencia» general resulta bastante indeseable. Por ejemplo, las transacciones confidenciales permiten a las empresas llevar a cabo procesos financieros de manera descentralizada y verificable, pero al mismo tiempo protege la información sensible de su exposición pública. De manera similar, este principio refuerza el ímpetu para la adopción del Bitcoin en otros sectores relevantes, como las finanzas gubernamentales, etc.
 
 ## 3. El ecosistema TDEX
 
 La aparición de soluciones descentralizadas en Liquid Network, o, como lo llama Adam Back, CEO de Blockstream, Liquid Finance o LiFi, ha cobrado recientemente una fuerza sustancial. En consecuencia, se está generando una cantidad creciente de valor en la red, especialmente en forma de activos líquidos. A su vez, TDEX se esfuerza por abordar la creciente demanda de la comunidad de un mercado secundario descentralizado para estos activos, además de ser un conjunto de herramientas de código abierto para fomentar una mayor innovación.
 
-En las secciones anteriores, hemos explicado el sistema de TDEX y las razones que hay detrás de algunas de sus elecciones cruciales. Ahora, explicaremos el ecosistema de la plataforma, y presentaremos al lector una descripción general de los protocolos y las implementaciones.
+En las secciones anteriores, hemos explicado el sistema de TDEX y las razones que hay detrás de algunas de sus elecciones cruciales. Ahora, explicaremos el ecosistema del protocolo, y presentaremos al lector una descripción general de los protocolos y las implementaciones.
 
 ### 3.1 Los pilares técnicos: conceptos básicos de True DEX (BOTD)
 
-En el núcleo de TDEX, hay cuatro protocolos: *mensaje*, *transporte, intercambio* y *comercio*, que analizaremos en este segmento. Sin embargo, en este sentido, el documento se abstiene deliberadamente de elaborar exposiciones técnicas completas que están disponibles en la documentación técnica bajo [Especificaciones de TDEX](https://specs.tdex.network/).
+En el núcleo de TDEX, hay cuatro protocolos: *mensaje*, *transporte, intercambio* y *comercio*, que analizaremos en este segmento. Sin embargo, en este sentido, el documento se abstiene deliberadamente de elaborar exposiciones técnicas completas que están disponibles en la documentación técnica bajo [Especificaciones de TDEX](https://dev.tdex.network/docs/specs/index).
 
 #### 3.1.1 Protocolo de mensajes: BOTD #1
 
@@ -103,7 +103,7 @@ El protocolo TSWAP es una implementación segura basada en intercambio atómico 
 
 Posiblemente la implementación más crucial para TDEX, el protocolo comercial combina todos los BOTD anteriores para definir la interfaz pública para la plataforma sin custodia. Al contrario del modelo de libro de órdenes de las plataformas de custodia, este protocolo permite a *traders* y *creadores de mercado* conectarse directamente mediante intercambios atómicos.
 
-En una sección posterior, analizaremos el ecosistema para traders y proveedores de liquidez. Actualmente, debería ser suficiente mencionar que los creadores de mercado representan daemons *siempre activos* y ofrecen liquidez proporcional a los pares de **Activo base y Activo cotizado**. En el futuro, TDEX adoptaría contratos basados en  [Simplicity](https://blockstream.com/simplicity.pdf) para mejorar aún más la seguridad y privacidad de la plataforma, al tiempo que permitiría funcionalidades más amplias.
+En una sección posterior, analizaremos el ecosistema para usuarios y proveedores de liquidez. Actualmente, debería ser suficiente mencionar que los creadores de mercado representan daemons *siempre activos* y ofrecen liquidez proporcional a los pares de **Activo base y Activo cotizado**. En el futuro, TDEX adoptaría contratos basados sobre  [Simplicity](https://blockstream.com/simplicity.pdf) para mejorar aún más la seguridad y privacidad de la plataforma, al tiempo que permitiría funcionalidades más amplias.
 
 ### 3.2 TDEX para creadores de mercado
 
@@ -121,15 +121,15 @@ Uno de los elementos diferenciadores de TDEX es que proporciona múltiples opcio
 
 De forma predeterminada, el protocolo adopta una estrategia de *creación de mercado de función constante* (CFMM, por sus siglas en inglés) para determinar los precios de los activos. No obstante, los creadores de mercado también tienen la opción de implementar fuentes de precios *conectables* (externas) mediante una API personalizada. Teniendo en cuenta que la participación empresarial sería fundamental para el éxito de TDEX, las estrategias de creación de mercado personalizadas se encuentran entre las funcionalidades más cruciales de la plataforma, sobre todo porque mantiene simultáneamente la lógica de la elección de los usuarios. En otras palabras, mientras que los proveedores tienen la opción de seleccionar su estrategia de precios, los traders soberanos de la plataforma tienen la capacidad de elegir o rechazar estas estrategias.
 
-#### 3.2.3 Tarifa de transacción
+#### 3.2.3 Tarifa de intercambio
 
-Aunque el ratio de reserva *base_asset-quote_asset* cambia con cada operación, TDEX garantiza la coherencia del tamaño del mercado general cobrando una tarifa de transacción mínima por cada operación y añadiéndola a las reservas. Teniendo en cuenta que el arbitraje provocará un flujo de transacciones uniforme, en aquellos casos en que el creador de mercado implemente una estrategia basada en AMM, los ingresos generados con esta tarifa deberían crecer con el tiempo.
+Aunque el ratio de reserva *base_asset-quote_asset* cambia con cada operación, TDEX garantiza la coherencia del tamaño del mercado general cobrando una tarifa de intercambio mínima por cada operación y añadiéndola a las reservas. Teniendo en cuenta que el arbitraje provocará un flujo de transacciones uniforme, en aquellos casos en que el creador de mercado implemente una estrategia basada en AMM, los ingresos generados con esta tarifa deberían crecer con el tiempo.
 
-Paralelamente, sin embargo, TDEX adopta el [mecanismo](https://en.bitcoin.it/wiki/PayJoin) [P2EP](https://en.bitcoin.it/wiki/PayJoin), por lo que minimiza el espacio de la cadena de bloques requerido por las transacciones, lo cual optimiza efectivamente la tarifa involucrada. Esto se hace para garantizar unas condiciones justas y equilibradas en la plataforma tanto para traders como para proveedores.
+Paralelamente, sin embargo, TDEX adopta el [mecanismo](https://en.bitcoin.it/wiki/PayJoin) [P2EP](https://en.bitcoin.it/wiki/PayJoin), por lo que minimiza el espacio de la cadena de bloques requerido por las transacciones, lo cual optimiza efectivamente la tarifa involucrada. Esto se hace para garantizar unas condiciones justas y equilibradas en el protocolo tanto para traders como para proveedores.
 
 #### 3.2.4 Fondos de liquidez (implementación futura)
 
-Más adelante, en su hoja de ruta prevista, TDEX implementaría una funcionalidad *sin custodia* que puede actuar como el sistema para que los daemons se conecten y agrupen sus activos. Una vez logrado, esto garantizaría una liquidez mayor y más uniforme en la plataforma, además de exponer un único endpoint para mayor comodidad de los traders. A su vez, TDEX podría adaptarse a demandas financieras que requieran una gran escala.
+Más adelante, en su hoja de ruta prevista, TDEX implementaría una funcionalidad *sin custodia* que puede actuar como el sistema para que los daemons se conecten y agrupen sus activos. Una vez logrado, esto garantizaría una liquidez mayor y más uniforme en el protocolo, además de exponer un único endpoint para mayor comodidad de los usuarios. A su vez, TDEX podría adaptarse a demandas financieras que requieran una gran escala.
 
 Así, el proveedor que cree un fondo será el *Pool Master* y otros proveedores podrán unirse a la *red de servicios distribuidos* para agregar liquidez. Como incentivo, el «pool master» tendrá la capacidad de determinar el precio base de los activos del fondo y los traders tendrán que buscar los precios al contado agregados del proveedor. Para cualquier activo dado, un proveedor podrá actuar por su cuenta o unirse a un fondo, pero no asumir ambas posiciones simultáneamente.
 
@@ -137,11 +137,11 @@ Así, el proveedor que cree un fondo será el *Pool Master* y otros proveedores 
 
 En el contexto de TDEX, el *mercado* es cualquier par de activos base y cotizado que se pueden intercambiar atómicamente. Como se menciona en BOTD #3, un **Proponente** tiene que iniciar intercambios en TDEX y, alternativamente, representa a un trader en la red. En otras palabras, un trader en TDEX es cualquier usuario que implementa completamente el Protocolo comercial (BOTD #4). Al hacerlo, se conecta con la interfaz del trader antes mencionada (el puerto público del daemon del proveedor) y acepta operar al precio de mercado estipulado.
 
-En general, operar en TDEX es similar a hacerlo en cualquier otra plataforma basada en intercambios atómicos, lo que significa que el trader puede intercambiar proporciones iguales (por valor de mercado) de ambos activos en el par. Sin embargo, a diferencia de la mayoría de sus colegas en otras redes, el sistema de TDEX garantiza confidencialidad, liquidaciones más rápidas y retrasos mínimos o nulos. Además, al no tener custodia, TDEX alivia al trader de las preocupaciones relativas a la pérdida de fondos por ataques e infracciones.
+En general, operar en TDEX es similar a hacerlo en cualquier otra plataforma basada en intercambios atómicos, lo que significa que el trader puede intercambiar proporciones iguales (por valor de mercado) de ambos activos en el par. Sin embargo, a diferencia de la mayoría de sus colegas en otras redes, el sistema de TDEX garantiza confidencialidad, liquidaciones más rápidas y retrasos mínimos o nulos. Además, al no tener custodia, TDEX alivia al usuario de las preocupaciones relativas a la pérdida de fondos por ataques e infracciones.
 
 #### 3.3.1 Kits de desarrollo de software: Contribución de TDEX al código abierto para LiFi
 
-Además de la interfaz de usuario predeterminada, la plataforma también permite a los traders implementar su cliente personalizado utilizando los kits de desarrollo de software (SDK, por sus siglas en inglés) de TDEX. En la fase inicial, esto se puede hacer usando [JavaScript](https://docs.tdex.network/tdex-sdk.html), pero en el futuro, TDEX tendrá SDK para Python, Go y Rust. Por otro lado, en la fase inicial, los traders interactúan con los proveedores utilizando la [interfaz de línea de comandos](https://docs.tdex.network/tdex-cli.html#install) (CLI, por sus siglas en inglés), hasta que se haga realidad el plan futuro para tener una aplicación móvil descentralizada.
+Además de la interfaz de usuario predeterminada, el protocolo también permite a los usuarios implementar su cliente personalizado utilizando los kits de desarrollo de software (SDK, por sus siglas en inglés) de TDEX. En la fase inicial, esto se puede hacer usando [JavaScript](https://docs.tdex.network/tdex-sdk.html), pero en el futuro, TDEX tendrá SDK para Python, Go y Rust. Por otro lado, en la fase inicial, los traders interactúan con los proveedores utilizando la [interfaz de línea de comandos](https://docs.tdex.network/tdex-cli.html#install) (CLI, por sus siglas en inglés), hasta que se haga realidad el plan futuro para tener una aplicación móvil descentralizada.
 
 Básicamente, estos SDK representan las contribuciones de TDEX a las capacidades de código abierto de la red, principalmente al capacitar a los desarrolladores versados en la implementación de API de Bitcoin y otras funcionalidades similares. En este sentido, la visión más amplia es impulsar las innovaciones dentro del ecosistema Liquid, sobre todo con el objetivo de fortalecer la generación de liquidez en la red.
 
@@ -151,7 +151,7 @@ Una vez comentados los diversos elementos del ecosistema TDEX, veamos ahora algu
 
 #### 3.4.1 Mercado secundario de Liquid Assets
 
-En general, hay que tener en cuenta que los activos negociados en la red TDEX son esencialmente Liquid Assets. Por lo tanto, ser un mercado secundario de Liquid Assets se encuentra entre los principales casos de uso de la plataforma TDEX, al menos en las etapas iniciales.
+En general, hay que tener en cuenta que los activos intercambiados en la red TDEX son esencialmente Liquid Assets. Por lo tanto, ser un mercado secundario de Liquid Assets se encuentra entre los principales casos de uso de la plataforma TDEX, al menos en las etapas iniciales.
 
 En resumen, Liquid permite a sus usuarios «emitir» activos transferibles, que abarcan diferentes clases de activos: monedas fiduciarias tokenizadas y otras criptomonedas que no son BTC, tokens no fungibles (coleccionables), tokens de incentivo (recompensas), materias primas tokenizadas (por ejemplo, monedas de oro), etc. Cada Liquid Asset tiene un identificador de 64 caracteres, que se puede adjuntar con dominios legibles por humanos en la cadena de bloques publicando sus metadatos en el «Registro de activos» en Blockstream.info, es decir, en la versión de Liquid de un Explorador de bloques. El protocolo también permite la reemisión de tokens y la quema de tokens. En el contexto de TDEX, esto significa que los proveedores pueden crear mercados para cualquier par de L-Assets, lo que facilita las operaciones con estos activos. Del mismo modo, podría aprovecharse en transacciones y ventas con tokens no fungibles (NFT, por sus siglas en inglés).
 
@@ -159,15 +159,15 @@ En este punto, sin embargo, es imperativo tener en cuenta un aspecto crucial de 
 
 #### 3.4.2 Trading institucional y transferencia de fondos
 
-Los traders y creadores de mercado de la red TDEX no tienen por qué ser necesariamente personas, sino que también pueden ser instituciones y empresas. Por lo tanto, la plataforma proporciona un canal seguro para que dicha organización opere con activos líquidos, que a su vez, deberían desempeñar un papel determinante en la mejora de las adopciones a largo plazo y en la ampliación de la comunidad.
+Los usuarios y creadores de mercado de la red TDEX no tienen por qué ser necesariamente personas, sino que también pueden ser instituciones y empresas. Por lo tanto, la plataforma proporciona un canal seguro para que dicha organización opere con activos líquidos, que a su vez, deberían desempeñar un papel determinante en la mejora de las adopciones a largo plazo y en la ampliación de la comunidad.
 
-Junto a esto, el conjunto de herramientas de código abierto de TDEX amplía aún más el alcance al establecer la posibilidad de que las empresas (pequeñas, medianas y grandes) implementen soluciones personalizadas para satisfacer sus necesidades financieras de manera descentralizada. De hecho, es en este sentido que el objetivo de TDEX de convertirse en una «red troncal» para LiFi puede hacerse realidad.
+Junto a esto, el conjunto de herramientas de código abierto de TDEX amplía aún más el alcance al establecer la posibilidad de que las empresas (pequeñas, medianas y grandes) implementen soluciones personalizadas para satisfacer sus necesidades financieras de manera descentralizada. De hecho, es en este sentido que el objetivo de TDEX de convertirse en una «red troncal» para Trustless Finance puede hacerse realidad.
 
 ## 4. Conclusión
 
 Las preocupaciones por la privacidad y la seguridad se multiplican. Las obligaciones de cumplimiento están paralizando las plataformas de cambio centralizadas de varias maneras, mientras que las descentralizadas comprometen la seguridad y son presa de ataques informáticos, estafas e infracciones de varios tipos. En última instancia, como efecto combinado de estos factores, los usuarios están perdiendo su dinero o sus datos y, lo que es más importante, se ven privados de sus derechos básicos a la privacidad y la autonomía.
 
-Desarrollada en este contexto, TDEX es una solución descentralizada que prioriza la privacidad y se implementa en Liquid Network. Principalmente un protocolo de negociación basado en intercambio atómico, la plataforma también tiene un conjunto de herramientas de código abierto que los desarrolladores pueden usar para implementar API personalizadas y otras soluciones en la red. En su conjunto, TDEX prevé convertirse en un protocolo troncal que facilite soluciones descentralizadas en Liquid Network y, a su vez, fortalezca la base de Liquid Finance (LiFi) como un espacio seguro, protegido y meritocrático para una comunidad global de usuarios y entusiastas de las criptomonedas.
+Desarrollada en este contexto, TDEX es un protocolo descentralizado que prioriza la privacidad y se implementa en Liquid Network. Principalmente un protocolo de negociación basado en intercambio atómico, la plataforma también tiene un conjunto de herramientas de código abierto que los desarrolladores pueden usar para implementar API personalizadas y otras soluciones en la red. En su conjunto, TDEX prevé convertirse en un protocolo troncal que facilite soluciones descentralizadas en Liquid Network y, a su vez, fortalezca la base de Trustless Finance como un espacio seguro, protegido y meritocrático para una comunidad global de usuarios y entusiastas del Bitcoin.
 
 ## Reconocimientos
 
@@ -180,3 +180,5 @@ Al embarcarse en un viaje hacia la construcción del futuro, varias personas y e
 [Mohammad Musharraf](http://mohammadmusharraf.com/)
 
 [Shiladitya Sinha](https://www.linkedin.com/in/shiladityasinhaofficial/)
+
+Sobre todo, gracias a Satoshi Nakamoto
